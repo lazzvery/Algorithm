@@ -11,7 +11,7 @@ class Solution {
             m = b;
         }
         
-        for(long i = s; i <= m; i++, s++) {
+        for(long i = s; i <= m; i++) {
             answer += i;
         }
         
