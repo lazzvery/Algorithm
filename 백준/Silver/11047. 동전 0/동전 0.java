@@ -21,9 +21,9 @@ public class Main {
         int count = 0;
 
         for(int i = type - 1; i >= 0; i--) {
-            while(arr[i] <= price) {
-                price -= arr[i];
-                count++;
+            if(arr[i] <= price) {
+                count += price / arr[i];
+                price = price % arr[i];
             }
         }
 
