@@ -5,8 +5,6 @@ class Solution {
         String[] answer = new String[strings.length];
         ArrayList<String> tmp = new ArrayList<String>();
         
-        Arrays.sort(strings);
-        
         for(int i = 0; i < strings.length; i++) {
             tmp.add(strings[i].charAt(n) + "" + strings[i]);
         }
