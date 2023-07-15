@@ -8,10 +8,8 @@ class Solution {
         
         Arrays.sort(score);
         
-        for(int i = score.length % m; i < score.length; i++) {
-            if((score.length - i) % m == 0) {
-                answer = answer + (score[i] * m);
-            }
+        for(int i = score.length % m; i < score.length; i += m) {
+            answer = answer + (score[i] * m);
         }
         
         return answer;
