@@ -6,8 +6,8 @@ class Solution {
         
         for(int i = 1; i < n; i++) {
             answer = (before1 + before2) % 1234567;
-            before1 = before2 % 1234567;
-            before2 = answer % 1234567;
+            before1 = before2;
+            before2 = answer;
         }
         
         return answer;
