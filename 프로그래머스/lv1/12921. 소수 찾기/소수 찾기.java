@@ -5,7 +5,7 @@ class Solution {
         
         for(int i = 2; i * i <= n; i++) {
             if(!arr[i]) {
-                for(int j = i * 2; j <= n; j+=i) {
+                for(int j = i * i; j <= n; j+=i) {
                     arr[j] = true;
                 }
             }
