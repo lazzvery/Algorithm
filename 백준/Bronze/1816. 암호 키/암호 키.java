@@ -14,7 +14,7 @@ public class Main {
         for(int i = 0; i < cnt; i++) {
             Long num = Long.parseLong(br.readLine());
 
-            for(int j = 2; j <= 1000001; j++) {
+            for(int j = 2; j <= 1000000; j++) {
                 if(num % j == 0) {  // 100만 이하의 약수가 존재한다
                     System.out.println("NO");
                     break;
